@@ -15,10 +15,10 @@
 </head>
 <body>
 Merci de vous connecter :
-<form method="POST" action="controler_login.php">
+<form method="POST" action="../controler/controler_login.php">
     Login : <input type="text" name="username"><br>
     Password : <input type="text" name="password"><br>
-    <input type="submit" value="Log in">
+    <input type="submit" value="Login">
 </form>
 </body>
 </html>
