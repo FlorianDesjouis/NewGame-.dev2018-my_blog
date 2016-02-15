@@ -14,7 +14,19 @@ class modelComment
         $database->bindParam('date', $date);
         $database->execute();
     }
+    
+//New commit : Add the editComment section
 
+    public function editComment($user, $comment, $date)
+    {
+        global $pdo;
+        $database = $pdo->prepare("UPDATE 'comments' SET 'user' = :user, 'comment' = :comment, 'date' = :date");
+        $database->bindParam('user', $user);
+        $database->bindParam('comment', $comment);
+        $database->bindParam('date', $date);
+        $database->execute();
+    }
+        
     public function deleteComment($id)
     {
         global $pdo;
