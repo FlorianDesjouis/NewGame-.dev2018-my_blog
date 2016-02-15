@@ -1,0 +1,34 @@
+<?php
+
+require_once("../config/config.php");
+
+class modelComment
+{
+
+    public function addComment($user, $comment, $date)
+    {
+        global $pdo;
+        $database = $pdo->prepare("INSERT INTO 'comment' (user, comment, date) VALUES (:user, :comment, :date)");
+        $database->bindParam('user', $user);
+        $database->bindParam('comment', $comment);
+        $database->bindParam('date', $date);
+        $database->execute();
+    }
+
+    public function deleteComment($id)
+    {
+        global $pdo;
+        $database = $pdo->prepare("DELETE FROM 'comments' WHERE 'id' = :id");
+        $database->bindParam('id', $id);
+        $database->execute();
+    }
+
+    public function getAllComment()
+    {
+        global $pdo;
+        $database = $pdo->query("SELECT * FROM 'comments'");
+        return $database;
+    }
+}
+
+?>
