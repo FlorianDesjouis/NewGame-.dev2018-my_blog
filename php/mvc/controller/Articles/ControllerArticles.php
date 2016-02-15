@@ -11,14 +11,14 @@ class controllerArticle {
             $model->NewArticle($_POST['title'], $_POST['content'], date('Y.m.d'));
 
         }else{
-            require_once "../../view/articles/create.php";
+            require_once "../../view/Articles/create.php";
         };
 
     }
     public function readArticle($id){
 
         if(isset($id)){
-            require_once "../../view/articles/read.php";
+            require_once "../../view/Articles/read.php";
         }
 
     }
@@ -26,13 +26,18 @@ class controllerArticle {
 
         if(isset($_POST['title']) && isset($_POST['content'])){
 
-            require_once "../../model/articles/modelArticle.php";
+            require_once "../../model/Articles/modelArticle.php";
             $model = new modelArticle();
-            $model->UpdateArticle($_POST['title'], $_POST['content'], date('Y.m.d'));
+            $model->updateArticle($_POST['title'], $_POST['content'], date('Y.m.d'));
         }else{
 
-            require_once "../../view/articles/update.php";
+            require_once "../../view/Articles/update.php";
         }
     }
+    public function deleteArticle(){
 
+        require_once "../../model/Articles/modelArticle.php";
+        $model = new modelArticle();
+        $model->deleteArticle($_POST['title'], $_POST['content'], date('Y.m.d'));
+    }
 }
