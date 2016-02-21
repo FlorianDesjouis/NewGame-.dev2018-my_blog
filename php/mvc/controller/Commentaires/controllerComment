@@ -1,0 +1,50 @@
+<?php
+
+/*
+ * Created by PhpStorm.
+ * User: Alexis
+ * Date: 09/02/2016
+ * Time: 01:21
+ */
+
+
+//Validate Code
+
+class controllerComment
+{
+    public function createComment()
+    {
+        if (isset($_POST['title']) && isset($_POST['content'])) {
+            require_once "../../model/Comments/modelComment.php";
+            $model = new modelComment();
+            $model->NewComment($_POST['title'], $_POST['content'], date('Y.m.d'));
+        } else {
+            require_once "../../view/Comments/create.php";
+        };
+    }
+
+    public function readComment($id)
+    {
+        if (isset($id)) {
+            require_once "../../view/Comments/read.php";
+        }
+    }
+
+    public function updateComment()
+    {
+        if (isset($_POST['title']) && isset($_POST['content'])) {
+            require_once "../../model/Comments/modelComment.php";
+            $model = new modelComment();
+            $model->updateComment($_POST['title'], $_POST['content'], date('Y.m.d'));
+        } else {
+            require_once "../../view/Comments/update.php";
+        }
+    }
+
+    public function deleteComments()
+    {
+        require_once "../../model/Comments/modelComment.php";
+        $model = new modelComment();
+        $model->deleteComment($_POST['title'], $_POST['content'], date('Y.m.d'));
+    }
+}
