@@ -1,26 +1,25 @@
 <?php
-$controller_name = $_GET['controller'];
-$action_name = $_GET['action'];
 
-$class_name = ucfirst($controller_name)."Controller";
-$controller_file = "../controller/".$class_name.".php";
+require_once "../controller/Articles/ControllerArticles.php";
+if (isset($_GET['action'])) {
 
-if(!file_exists($controller_file)){
-    $controller_file = "../controller/errorController.php";
-    $action_name = "errorAction";
+    if ($_GET['action'] == 'article') {
+        if (isset($_GET['id'])) {
+            $id = intval($_GET['id']);
+            if ($id != 0) {
+                $database = new controllerArticle();
+                $database->getAllArticle();
+            }
+            else
+                throw new Exception("Identifiant de billet non valide");
+        }
+        else
+            throw new Exception("Identifiant de billet non défini");
+    }
+    else
+        throw new Exception("Action non valide");
 }
-require_once($controller_file);
-$controller = new $class_name;
-
-$controller = new $class_name();
-$action = strtolower($action_name)."Action";
-if(!method_exists($controller,$action)){
-    $controller_file = "../controller/errorController.php";
-    require_once ($controller_file);
-    $action = "404";
-    $controller = new errorController();
+else {
+    $database = new controllerArticle();
+    $database->getAllArticle();
 }
-
-$result = $controller->$action_name();
-
-echo $result;

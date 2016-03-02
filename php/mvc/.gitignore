@@ -1,2 +1,3 @@
 model/config/config.php
-.idea
+.././.idea
+model/Articles/configdb.php
