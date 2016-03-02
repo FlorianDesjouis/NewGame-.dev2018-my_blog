@@ -1,5 +1,7 @@
 <?php
-    require_once("../config/config.php");
+
+require_once("configdb.php");
+
 class modelArticle{
     public function createArticle($titre, $post, $date){
         global $pdo;

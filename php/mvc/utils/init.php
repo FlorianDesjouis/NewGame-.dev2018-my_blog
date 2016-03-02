@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Desjouis
- * Date: 16/02/2016
- * Time: 14h01
- */
+global $pdo;
+include_once("autoload.php");
+include_once("session.php");
+$pdo = include_once("dbconnexion.php");

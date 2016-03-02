@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Desjouis
- * Date: 16/02/2016
- * Time: 13h59
- */
+require_once(realpath(dirname(__FILE__))."/../model/config/config.php");
+global $config;
+$pdo = new PDO($config['host'],
+    $config['user'],
+    $config['password']);
+return $pdo;
