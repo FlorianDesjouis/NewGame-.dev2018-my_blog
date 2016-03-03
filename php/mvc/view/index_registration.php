@@ -18,10 +18,16 @@
         <a href="#" class="headerIcon" id="headerIcon"></a>
         <nav class="menu">
             <a href="#">Acceuil</a>
-            <a href="#">Article</a>
             <a href="#">Image</a>
-            <a href="#">Vidéos</a>
+            <a href="#">Profil</a>
+            <a href="#">Connexion</a>
         </nav>
+        <div class="desktopMenu">
+            <a href="#">Accueil</a>
+            <a href="#">Image</a>
+            <a href="#">Profil</a>
+            <a href="#">Connexion</a>
+        </div>
     </header>
     <div class="blockForm">
         <form method="post" action="#" class="registerForm">
@@ -31,9 +37,12 @@
             Votre adresse mail <br><input type="email" name="email" placeholder="E-mail" class="field"><br><br>
             Vérification e-mail <br><input type="email" name="check-email" placeholder="Verif. e-mail" class="field"><br><br>
             Votre mot de passe <br><input type="password" name="password" placeholder="Mot de passe" class="field"><br><br>
-            Vérification mot de passe <br><input type="password" name="check-password" placeholder="Vérif. mot de passe" class="field"><br><br>
+            Vérification mot de passe <br><input type="password" name="check-password" placeholder="Vérif. mot de passe" class="field"><br>
             <input type="submit" value="Envoyer" class="field">
         </form>
     </div>
+    <footer class="footer">
+        2016 © New game+ - Tous droits reservés
+    </footer>
 </body>
 </html>
