@@ -7,6 +7,24 @@
 html{
     font-family: OpenSansRegular;
 }
+
+/* Ajout leger effet animation d'une page a l'autre */
+
+@keyframes Show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation-name: Show;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
 /*---HEADER---*/
 
 .mainConteiner {
