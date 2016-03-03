@@ -16,18 +16,12 @@
     <header class="header">
         <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon" id="headerIcon"></a>
-<<<<<<< HEAD
         <nav class="menu">
             <a href="#">Acceuil</a>
             <a href="#">Image</a>
-=======
-        <nav class="desktopMenu">
-            <a href="#">Accueil</a>
-            <a href="#">Article</a>
->>>>>>> 9f0ba81700141c3883f0823d56e3887b117f1967
             <a href="#">Profil</a>
             <a href="#">Connexion</a>
-        </nav>
+            </nav>
         <div class="desktopMenu">
             <a href="#">Accueil</a>
             <a href="#">Image</a>
