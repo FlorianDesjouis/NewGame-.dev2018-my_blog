@@ -16,11 +16,11 @@
     <header class="header">
         <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon" id="headerIcon"></a>
-        <nav class="menu">
-            <a href="#">Acceuil</a>
+        <nav class="desktopMenu">
+            <a href="#">Accueil</a>
             <a href="#">Article</a>
-            <a href="#">Image</a>
-            <a href="#">Vidéos</a>
+            <a href="#">Profil</a>
+            <a href="#">Connexion</a>
         </nav>
     </header>
     <div class="blockForm">
