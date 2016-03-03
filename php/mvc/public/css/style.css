@@ -138,6 +138,26 @@ a.article {
     margin: 15% 1% 1% 1%;
 }
 
+/*---STYLE LOGIN PAGE---*/
+
+.blockLogin{
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 0 15px rgb(100,100,100);
+    width: 80%;
+    margin: 10% 1% 1% 8%;
+}
+
+.loginForm{
+    font-size: 1rem;
+    margin: 5% 5% 5% 5%;
+    padding: 1%;
+}
+
+.fieldLogin{
+    margin: 5% 5% 5% 5%;
+}
+
+
 @media screen and (min-width: 641px) {
 
     /* -------------STYLE HOME.PHP  MOBILE FIRST MODELE IPAD ----------*/
@@ -223,7 +243,7 @@ a.article {
 
     /*---FOOTER---*/
     .footer {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         width: 100%;
         height: 50px;
@@ -258,6 +278,26 @@ a.article {
     .desktopMenu {
         display: none;
     }
+
+    /*---STYLE LOGIN PAGE---*/
+
+    .blockLogin{
+        border-bottom: 2px solid #ff0000;
+        box-shadow: 0 0 15px rgb(100,100,100);
+        width: 80%;
+        margin: 10% 1% 1% 8%;
+    }
+
+    .loginForm{
+        font-size: 1.3rem;
+        margin: 5% 5% 5% 5%;
+    }
+
+    .fieldLogin{
+        margin: 5% 5% 5% 0;
+        font-size: 1.3rem;
+    }
+
 }
 @media screen and (min-width: 1025px) {
 
