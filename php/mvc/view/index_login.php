@@ -36,18 +36,20 @@
             <a href="#">Profil</a>
             <a href="#">Connexion</a></div>
         <form class="login">
-            E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
-            Password : <input type="password" name="userPassword" id="userPassword"><label
-                for="userPassword"></label><br>
+            <label for="userEmail">E-mail :</label><br>
+            <input type="email" name="userEmail" id="userEmail" placeholder="Adresse Mail">
+            <label for="userPassword">Password : </label><br>
+            <input type="password" name="userPassword" id="userPassword" placeholder="Mot de Passe">
             <input type="submit" value="Login">
         </form>
     </header>
     <div class="blockLogin">
         <form class="loginForm">
             Merci de vous connecter :<br><br>
-            E-mail : <input type="email" name="userEmail" id="userEmail" class="fieldLogin"><label for="userEmail"></label><br>
-            Password : <input type="password" name="userPassword" id="userPassword" class="fieldLogin"><label
-                for="userPassword"></label><br>
+            <label for="userEmail">E-mail : </label><br>
+            <input type="email" name="userEmail" id="userEmail" class="fieldLogin" placeholder="Adresse Mail"><br>
+            <label for="userPassword">Password : </label><br>
+            <input type="password" name="userPassword" id="userPassword" class="fieldLogin" placeholder="Mot de Passe"><br>
             <input type="submit" value="Login" class="fieldLogin">
         </form>
     </div>
