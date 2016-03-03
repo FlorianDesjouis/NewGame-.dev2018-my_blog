@@ -147,21 +147,33 @@ a.article {
 
 /*---STYLE LOGIN PAGE---*/
 
-.blockLogin{
+.blockLogin {
     border-bottom: 2px solid #ff0000;
-    box-shadow: 0 0 15px rgb(100,100,100);
+    box-shadow: 0 0 15px rgb(100, 100, 100);
     width: 80%;
     margin: 10% 1% 1% 8%;
 }
 
-.loginForm{
+.loginForm {
+    text-align: center;
     font-size: 1rem;
-    margin: 5% 5% 5% 5%;
-    padding: 1%;
+    border-radius: 10px 10px 10px 10px;
+    margin: 5% 0 5% 0;
+    padding: 2%;
 }
 
-.fieldLogin{
+.fieldLogin {
     margin: 5% 5% 5% 5%;
+    margin-top: 2%;
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 27px;
+    width: 50%;
+    max-width: 90%;
+}
+
+.fieldLogin::-webkit-input-placeholder {
+    text-align: center;
 }
 
 
@@ -354,20 +366,20 @@ a.article {
 
     /*---STYLE LOGIN PAGE---*/
 
-    .blockLogin{
+    .blockLogin {
         border-bottom: 2px solid #ff0000;
-        box-shadow: 0 0 15px rgb(100,100,100);
+        box-shadow: 0 0 15px rgb(100, 100, 100);
         width: 80%;
         margin: 10% 1% 1% 8%;
     }
 
-    .loginForm{
+    .loginForm {
         font-size: 1.3rem;
         margin: 5% 5% 5% 5%;
     }
 
-    .fieldLogin{
-        margin: 5% 5% 5% 0;
+    .fieldLogin {
+        margin: 5% 0 5% 0;
         font-size: 1.3rem;
     }
 
@@ -512,6 +524,12 @@ a.article {
         font-size: 1.5rem;
         display: inline-block;
     }
+    
+    /* Login Form */
+    
+    .loginForm {
+        font-size: 1.6rem;
+    }
 }
 @media screen and (min-width: 1441px) {
     .blockLogo {
@@ -608,6 +626,12 @@ a.article {
     .titleSize {
         width: 25%;
         height: 4%;
+        font-size: 2rem;
+    }
+    
+    /* Login Form */
+    
+    .loginForm {
         font-size: 2rem;
     }
 }
