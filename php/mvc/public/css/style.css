@@ -262,20 +262,18 @@ a.article {
 @media screen and (min-width: 1025px) {
 
     /*    1025p Desktop Version    */
-
-    /*  HEADER  */
-
+    /*    HEADER    */
     .blockLogo {
         height: auto;
         margin: 0 5% 5% 0;
     }
 
-    .blockLogo img{
+    .blockLogo img {
         height: 100px;
 
     }
 
-    .headerIcon{
+    .headerIcon {
         display: none;
     }
 
@@ -287,29 +285,48 @@ a.article {
         display: none;
     }
 
-    /*Le menu est pour le moment laissé sur la droite, en attendant les élèments que l'on souhaite rajouter sur la page*/
+    .desktopMenu {
+        display: inline-block;
+        font-size: 1.8rem;
+        float: right;
+        margin-top: 3%;
+        margin-right: 2%;
+        word-spacing: 2rem;
+    }
 
-    /*---SECTION---*/
+    .desktopMenu a {
+        text-decoration: none;
+        color: black;
+    }
+    .desktopMenu a:hover {
+        text-decoration: none;
+        color: grey;
+    }
+
+    /*    SECTION    */
     .title {
         display: inline-block;
         margin: 3% 3% 3% 3%;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
 
     .article {
         display: inline-block;
+        text-align: justify;
+        font-size: 1.6rem;
+        line-height: 2.0rem;
         width: 90%;
         margin: 2% 3% 2% 3%;
-        font-size: 2.0rem;
-        line-height: 2.0rem;
-        text-align: justify;
     }
 
     .blockText {
         margin: 2% 3% 2% 3%;
     }
-    .desktopMenu {
-        display: none;
+
+    .footer {
+        font-size: 1.5rem;
+        height: 30px;
+        margin: 3% 1% 1% 0;
     }
 }
 @media screen and (min-width: 1441px) {
