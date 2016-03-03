@@ -24,7 +24,8 @@
             <a href="#">Accueil</a>
             <a href="#">Image</a>
             <a href="#">Profil</a>
-            <a href="#">Connexion</a></div>
+            <a href="#">Connexion</a>
+        </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
             Password : <input type="password" name="userPassword" id="userPassword"><label for="userPassword"></label><br>
