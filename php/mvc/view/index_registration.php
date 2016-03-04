@@ -15,13 +15,28 @@
 <div class="mainConteiner" role="main">
     <header class="header">
         <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
-        <a href="#" class="headerIcon" id="headerIcon"></a>
-        <nav class="desktopMenu">
+        <a href="#" class="headerIcon"></a>
+        <a href="#" class="hideIcon">
+            <hr id="croix1">
+            <hr id="croix2">
+        </a>
+        <nav class="menu">
             <a href="#">Accueil</a>
             <a href="#">Article</a>
-            <a href="#">Profil</a>
+            <a href="#">Image</a>
             <a href="#">Connexion</a>
         </nav>
+        <div class="desktopMenu">
+            <a href="#">Accueil</a>
+            <a href="#">Image</a>
+            <a href="#">Profil</a>
+            <a href="#">Connexion</a></div>
+        <form class="login">
+            E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
+            Password : <input type="password" name="userPassword" id="userPassword"><label
+                for="userPassword"></label><br>
+            <input type="submit" value="Login">
+        </form>
     </header>
     <div class="blockForm">
         <form method="post" action="#" class="registerForm">
@@ -29,11 +44,18 @@
             Votre prénom <br><input type="text" name="firstname" placeholder="Prénom" class="field"><br><br>
             Votre nom <br><input type="text" name="lastname" placeholder="Nom" class="field"><br><br>
             Votre adresse mail <br><input type="email" name="email" placeholder="E-mail" class="field"><br><br>
-            Vérification e-mail <br><input type="email" name="check-email" placeholder="Verif. e-mail" class="field"><br><br>
-            Votre mot de passe <br><input type="password" name="password" placeholder="Mot de passe" class="field"><br><br>
-            Vérification mot de passe <br><input type="password" name="check-password" placeholder="Vérif. mot de passe" class="field"><br><br>
+            Vérification e-mail <br><input type="email" name="check-email" placeholder="Verif. e-mail"
+                                           class="field"><br><br>
+            Votre mot de passe <br><input type="password" name="password" placeholder="Mot de passe"
+                                          class="field"><br><br>
+            Vérification mot de passe <br><input type="password" name="check-password"
+                                                 placeholder="Vérif. mot de passe" class="field"><br><br>
             <input type="submit" value="Envoyer" class="field">
         </form>
     </div>
+    <footer class="footer">
+        2016 © New game+ - Tous droits reservés
+    </footer>
+</div>
 </body>
 </html>

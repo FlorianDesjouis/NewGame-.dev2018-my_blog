@@ -23,7 +23,11 @@
 <div class="mainConteiner">
     <header class="header">
         <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
-        <a href="#" class="headerIcon" id="headerIcon"></a>
+        <a href="#" class="headerIcon"></a>
+        <a href="#" class="hideIcon">
+            <hr id="croix1">
+            <hr id="croix2">
+        </a>
         <nav class="menu">
             <a href="#">Accueil</a>
             <a href="#">Article</a>
