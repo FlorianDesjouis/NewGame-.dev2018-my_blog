@@ -41,7 +41,7 @@ body {
 }
 
 .section {
-    background-color: #EFEFEF;
+    background-color: #C0C0C0;
 }
 
 .desktopMenu {
@@ -95,7 +95,7 @@ body {
     bottom: 0;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    background-color: #2a378b;
+    background-color: #ffffff;
     width: 250px;
     transform: translateX(250px);
 }
@@ -105,7 +105,9 @@ body {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    border-bottom: 1px solid #303f9f;
+    border-bottom: 1px solid #ff0000;
+    text-decoration: none;
+    color: #000;
 }
 
 .login {
@@ -335,7 +337,7 @@ a.article {
         bottom: 0;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        background-color: #2a378b;
+        background-color: #FFF;
         width: 250px;
         transform: translateX(250px);
     }
@@ -345,7 +347,9 @@ a.article {
         height: 40px;
         text-align: center;
         line-height: 40px;
-        border-bottom: 1px solid #303f9f;
+        border-bottom: 1px solid #FF0000;
+        text-decoration: none;
+        color: #000;
     }
 
     .login {
