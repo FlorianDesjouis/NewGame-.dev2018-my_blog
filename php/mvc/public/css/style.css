@@ -151,10 +151,6 @@ a.article {
 .footer {
     font-size: 0.8rem;
     text-align: center;
-    width: 100%;
-    height: 50px;
-    border-top: 5px solid red;
-    border-bottom: 10px solid lightgray;
 }
 
 .blockFooter{
@@ -208,6 +204,7 @@ a.article {
 .form {
     display: inline-block;
     width: 90%;
+    height: 20rem;
     margin: 5% 5% 5% 5%;
     font-size: 1.3rem;
     line-height: 1.2rem;
@@ -224,53 +221,32 @@ a.article {
 
 .textArea {
     width: 80%;
-    height: 4rem;
+    height: 8rem;
+    margin-bottom: 4%;
 }
 
 .createArticle {
     font-size: 1rem;
+}
+.titleSize {
+    font-size: 1rem;
     text-align: center;
 }
-
+.btn {
+    float: left;
+    display: block;
+}
+.Send {
+    display: block;
+    float: left;
+    margin-left: 2%;
+}
 .dateSize {
     font-size: 1rem;
+    display: block;
+    float: left;
 }
 
-/*---STYLE UPDATE PAGE---*/
-
-.blockUpdate{
-    border-bottom: 2px solid #ff0000;
-    box-shadow: 0 0 15px rgb(100, 100, 100);
-    width: 80%;
-    margin: 10% 10% 37% 10%;
-}
-
-.updateForm{
-    font-size: 1rem;
-    margin: 5% 5% 5% 5%;
-}
-
-.fieldUpdate{
-    margin: 10% 5% 5% 5%;
-}
-
-/*---STYLE CREATE PAGE---*/
-
-.blockCreate{
-    border-bottom: 2px solid #ff0000;
-    box-shadow: 0 0 15px rgb(100, 100, 100);
-    width: 80%;
-    margin: 10% 10% 37% 10%;
-}
-
-.createForm{
-    font-size: 1rem;
-    margin: 5% 5% 5% 5%;
-}
-
-.fieldCreate{
-    margin: 10% 5% 5% 5%;
-}
 
 @media screen and (min-width: 641px) {
 
@@ -411,6 +387,7 @@ a.article {
         text-align: center;
         display: inline-block;
         width: 90%;
+        height: 27rem;
         margin: 10% 5% 5% 5%;
         font-size: 1.3rem;
         line-height: 1.2rem;
@@ -441,46 +418,22 @@ a.article {
     .dateSize {
         font-size: 1.3rem;
         display: inline-block;
+        float: none ;
     }
-    
-        /*---STYLE UPDATE PAGE---*/
-
-    .blockUpdate{
-        border-bottom: 2px solid #ff0000;
-        box-shadow: 0 0 15px rgb(100, 100, 100);
-        width: 80%;
-        margin: 10% 10% 37% 10%;
+    .btn {
+        display: inline-block;
+        float: left;
+        margin-left: 10%;
+        margin-right: 20%;
     }
-
-    .updateForm{
-        font-size: 1.4rem;
-        margin: 5% 5% 5% 5%;
+    .Send {
+        display: inline-block;
+        text-align: center;
+        float: none;
     }
-
-    .fieldUpdate{
-        font-size: 1.4rem;
-        margin: 10% 5% 5% 5%;
+    .titleSize {
+        margin-top: 2%;
     }
-
-    /*---STYLE CREATE PAGE---*/
-
-    .blockCreate{
-        border-bottom: 2px solid #ff0000;
-        box-shadow: 0 0 15px rgb(100, 100, 100);
-        width: 80%;
-        margin: 10% 10% 37% 10%;
-    }
-
-    .createForm{
-        font-size: 1.4rem;
-        margin: 5% 5% 5% 5%;
-    }
-
-    .fieldCreate{
-        font-size: 1.4rem;
-        margin: 10% 5% 5% 5%;
-    }
-
 
     /*---STYLE LOGIN PAGE---*/
     .blockLogin {
@@ -630,6 +583,7 @@ a.article {
         text-align: center;
         display: inline-block;
         width: 90%;
+        height: 90%;
         margin: 5% 5% 5% 5%;
         font-size: 1.3rem;
         line-height: 1.2rem;
@@ -648,6 +602,7 @@ a.article {
         width: 80%;
         height: 18rem;
         margin-bottom: 2%;
+        font-size: 1.5rem;
     }
 
     .createArticle {
@@ -656,10 +611,15 @@ a.article {
         margin-bottom: 2%;
         margin-top: 2%;
     }
-
+    .titleSize {
+        font-size: 2rem;
+    }
     .dateSize {
         font-size: 1.5rem;
         display: inline-block;
+    }
+    .Send {
+        margin-bottom: 2%;
     }
 
     /*---STYLE LOGIN PAGE---*/
@@ -766,7 +726,7 @@ a.article {
         text-align: center;
         display: inline-block;
         width: 90%;
-        height: 60rem;
+        height: 55rem;
         margin: 2% 5% 5% 5%;
         font-size: 1.3rem;
         line-height: 1.2rem;
@@ -801,9 +761,8 @@ a.article {
     }
 
     .titleSize {
-        width: 25%;
-        height: 4%;
         font-size: 2rem;
+        text-align: center;
     }
 
     /* Login Form */

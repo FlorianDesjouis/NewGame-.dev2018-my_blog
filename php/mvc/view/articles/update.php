@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
     <link href="../../public/css/reset.css" rel="stylesheet">
@@ -36,15 +37,14 @@
             <input type="submit" value="Login">
         </form>
     </header>
-    <div class="blockUpdate">
-    <form method="post" action="/articles/update" class="updateForm">
-        <input type="text" name="title" placeholder="<?= "Afficher titre article" ?>" class="fieldUpdate"><br><br>
-        <textarea name="content" class="fieldUpdate" id="content"><?= "Afficher contenu article" ?></textarea><label for="content"></label> <br>
-        <input type="button" value="Choisissez un fichier" class="fieldUpdate">&nbsp;&nbsp;
-        Date du jour : <?= date("d.m.y") ?><br><br>
-        <input type="button" value="Envoyer" class="fieldUpdate">
+    <form method="post" action="/articles/update" class="form">
+        <div class="titleSize">Formulaire de modification d'article</div>
+        <input type="text" name="title" placeholder="<?= "Afficher titre article" ?>" class="titleSize marginForm"><br><br>
+        <textarea name="content" class="textArea marginForm" id="content"><?= "Afficher contenu article" ?></textarea><label for="content"></label> <br>
+        <input type="button" value="Choisissez un fichier" class="marginForm">
+        <div class="dateSize marginForm"> Date du jour : <?= date("d.m.y") ?></div><br><br>
+        <input type="button" value="Envoyer" class="Send">
     </form>
-    </div>
     <footer class="footer">
         2016 © New game+ - Tous droits reservés
     </footer>

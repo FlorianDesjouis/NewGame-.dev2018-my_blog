@@ -36,15 +36,14 @@
             <input type="submit" value="Login">
         </form>
     </header>
-    <div class="blockCreate">
-        <form method="post" action="articles/create" class="createForm">
-            <input type="text" name="title" placeholder="Titre de l'article" class="fieldCreate"><br><br>
-            <textarea name="content" placeholder="Contenu de l'article" class="fieldCreate"></textarea><br>
-            <input type="button" value="Choisissez un fichier" class="fieldCreate">&nbsp;&nbsp;
-            Date du jour : <?= date("d.m.Y") ?><br><br>
-            <input type="button" value="Envoyer" class="fieldCreate">
+        <form method="post" action="articles/create" class="form">
+            <div class="titleSize">Formulaire de creation d'article</div>
+            <input type="text" name="title" placeholder="Titre de l'article" class="createArticle marginForm"><br><br>
+            <textarea name="content" placeholder="Contenu de l'article" class="textArea marginForm"></textarea><br>
+            <input type="button" value="Choisissez un fichier" class="marginForm">
+            <div class="dateSize marginForm">Date du jour : <?= date("d.m.Y") ?></div><br><br>
+            <input type="button" value="Envoyer" class="Send">
         </form>
-    </div>
     <footer class="footer">
         2016 © New game+ - Tous droits reservés
     </footer>
