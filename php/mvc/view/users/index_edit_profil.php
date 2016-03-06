@@ -11,7 +11,14 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="Users/editProfilController.php"></script>
     <script src="js/script.js"></script>
+    <script src="js/optional_plugin_slide.js"></script>
+    <script src="js/checkPosition.js"></script>
     <title>New game+ - Edit Profil</title>
+    <script>
+        $(function(){
+            $('#header').myPlugin({time:1000});
+        });
+    </script>
 </head>
 <body>
 <div class="mainConteiner" role="main">
@@ -55,4 +62,5 @@
     </footer>
 </div>
 </body>
+<a href="#header"><img src="../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </html>
