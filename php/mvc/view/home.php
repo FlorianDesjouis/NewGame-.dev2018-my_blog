@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
-    <link rel="stylesheet" href="../public/css/reset.css">
-    <link rel="stylesheet" href="../public/css/style.css">
-    <script src="../../mvc/public/js/jquery-2.2.0.min.js"></script>
-    <script src="../../mvc/public/js/script.js"></script>
-    <script src="../../mvc/public/js/optional_plugin_slide.js"></script>
-    <script src="../../mvc/public/js/checkPosition.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/optional_plugin_slide.js"></script>
+    <script src="js/checkPosition.js"></script>
     <title>New game+</title>
     <script>
         $(function(){
@@ -19,7 +19,7 @@
 <body>
 <div class="mainConteiner" role="main">
     <header class="header" id="header">
-        <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
+        <div class="blockLogo"><img src="asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon" id="headerIcon"></a>
         <nav class="menu">
             <a href="#">Accueil</a>
@@ -140,6 +140,6 @@
         2016 © New game+ - Tous droits reservés
     </footer>
 </div>
-<a href="#header"><img src="../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
+<a href="#header"><img src="asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </body>
 </html>
