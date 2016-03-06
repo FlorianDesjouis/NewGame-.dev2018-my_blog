@@ -8,8 +8,8 @@
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="../../public/js/optional_plugin_slide.js"></script>
-    <script src="../../public/js/checkPosition.js"></script>
+    <script src="js/optional_plugin_slide.js"></script>
+    <script src="js/checkPosition.js"></script>
     <title>New game+</title>
     <script>
         $(function(){
@@ -141,6 +141,6 @@
         2016 © New game+ - Tous droits reservés
     </footer>
 </div>
-<a href="#header"><img src="../../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
+<a href="#header"><img src="asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </body>
 </html>
