@@ -4,7 +4,7 @@ Florian Desjouis, Gaël Marguiller, Alexis Afonso
 Projet de blog en groupe, 1ère année sup'internet
 
 
-Identifiants de bdd dans config/dbconfig.php :
+Identifiants de bdd dans config/dbconf.php :
 
 "user" => "",
 
