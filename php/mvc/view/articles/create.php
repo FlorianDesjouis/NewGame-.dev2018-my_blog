@@ -19,16 +19,17 @@
             <hr id="croix2">
         </a>
         <nav class="menu">
-            <a href="#">Accueil</a>
-            <a href="#">Article</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Connexion</a>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
         </nav>
         <div class="desktopMenu">
-            <a href="#">Accueil</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Profil</a>
-            <a href="#">Connexion</a></div>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
+        </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
             Password : <input type="password" name="userPassword" id="userPassword"><label
@@ -41,7 +42,7 @@
             <input type="text" name="title" placeholder="Titre de l'article" class="createArticle marginForm"><br><br>
             <textarea name="content" placeholder="Contenu de l'article" class="textArea marginForm"></textarea><br>
             <input type="button" value="Choisissez un fichier" class="marginForm">
-            <div class="dateSize marginForm">Date du jour : <?= date("d.m.Y") ?></div><br><br>
+            <div class="dateSize marginForm">Date du jour : <?php date("d.m.Y") ?></div><br><br>
             <input type="button" value="Envoyer" class="Send">
         </form>
     <footer class="footer">
