@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
-    <script src="../../public/js/jquery-2.2.0.min.js"></script>
-    <script src="../../public/js/jquery-ui.min.js"></script>
-    <script src="../../controller/Users/editProfilController.php"></script>
-    <link href="../../public/css/reset.css" rel="stylesheet">
-    <link href="../../public/css/style.css" rel="stylesheet">
-    <script src="../../public/js/script.js"></script>
-    <script src="../../public/js/optional_plugin_slide.js"></script>
-    <script src="../../public/js/checkPosition.js"></script>
+    <script src="../js/jquery-2.2.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../controller/Users/editProfilController.php"></script>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <script src="../js/optional_plugin_slide.js"></script>
+    <script src="../js/checkPosition.js"></script>
     <title>New game+ - Edit Profil</title>
     <script>
         $(function(){
@@ -22,8 +22,8 @@
 </head>
 <body>
 <div class="mainConteiner" role="main">
-    <header class="header">
-        <div class="blockLogo"><img src="../../public/asset/img/logo_blog.png" alt="logo_blog"></div>
+    <header class="header" id="header">
+        <div class="blockLogo"><img src="../asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon"></a>
         <a href="#" class="hideIcon">
             <hr id="croix1">
@@ -62,5 +62,5 @@
     </footer>
 </div>
 </body>
-<a href="#header"><img src="../../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
+<a href="#header"><img src="../asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </html>
