@@ -1,5 +1,6 @@
 # NewGame-.dev2018-my_blog
 Florian Desjouis, Gaël Marguiller, Alexis Afonso
+
 Projet de blog en groupe, 1ère année sup'internet
 
 
