@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
     <link href="../../public/css/reset.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
+    <link href="../../public/css/commentStyle.css" rel="stylesheet">
     <script src="../../public/js/jquery-2.2.0.min.js"></script>
     <script src="../../public/js/script.js"></script>
+    <script src="../../public/js/commentAjax.js"></script>
     <title>New game+</title>
 </head>
 <body>
@@ -152,6 +154,15 @@
             </p>
         </article>
     </section>
+    <form method="post" class="commentForm">
+        <input type="text" placeholder="Renseigner votre login" id="user"><br>
+        <textarea placeholder="Poster votre commentaire" id="comment"></textarea><br>
+        <input type="submit" id="submit" value="Poster le commentaire">
+    </form>
+    <div id="return"></div>
+    <div id="showUser"></div>
+    <div id="showDate"></div>
+    <div id="showComment"></div>
     <footer class="footer">
         2016 © New game+ - Tous droits reservés
     </footer>
