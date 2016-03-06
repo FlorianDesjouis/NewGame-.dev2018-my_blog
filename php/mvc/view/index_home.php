@@ -13,7 +13,7 @@
 <body>
 <div class="mainConteiner" role="main">
     <header class="header">
-        <div class="blockLogo"><img src="img/logo_blog.png" alt="logo_blog"></div>
+        <div class="blockLogo"><img src="asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon" id="headerIcon"></a>
         <nav class="menu">
             <a href="#">Accueil</a>
