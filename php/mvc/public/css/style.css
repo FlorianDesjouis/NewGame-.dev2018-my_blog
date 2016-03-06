@@ -23,7 +23,7 @@ html {
     z-index: 999;
 }
 
-/* Ajout effet animation d'une page a l'autre */
+/* add animation effect charging page/Logo/Menu */
 
 @keyframes Show {
     0% {
@@ -37,6 +37,76 @@ html {
 body {
     animation-name: Show;
     animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.blockLogo {
+    backface-visibility: visible;
+    animation-name: flipInX;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.desktopMenu {
+    backface-visibility: visible;
+    animation-name: flipInY;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
