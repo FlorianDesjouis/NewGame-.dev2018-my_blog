@@ -246,6 +246,42 @@ a.article {
     display: block;
     float: left;
 }
+/*/---STYLE INDEX PROFIL---/*/
+.blockProfil {
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 0 15px rgb(100, 100, 100);
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+}
+
+.profilForm {
+    font-size: 1rem;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+}
+
+.profilField {
+    margin-bottom: 2%;
+}
+
+/*/---STYLE INDEX EDIT PROFIL---/*/
+
+.blockEditProfil {
+    border-bottom: 2px solid #ff0000;
+    box-shadow: 0 0 15px rgb(100, 100, 100);
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+}
+
+.editProfilForm {
+    font-size: 1rem;
+    margin: 5% 5% 5% 5%;
+    text-align: center;
+}
+
+.editProfilField {
+    margin-bottom: 2%;
+}
 
 
 @media screen and (min-width: 641px) {
@@ -452,6 +488,41 @@ a.article {
         margin: 5% 5% 5% 5%;
         font-size: 1.3rem;
     }
+/*/---STYLE INDEX PROFIL---/*/
+    .blockProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+
+    .profilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
+
+/*/---STYLE INDEX EDIT PROFIL---/*/
+    .blockEditProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+
+    .editProfilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .editProfilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
 
 }
 
@@ -639,6 +710,41 @@ a.article {
         margin: 5% 5% 5% 5%;
         font-size: 1.3rem;
     }
+/*/---STYLE INDEX PROFIL---/*/
+    .blockProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+
+    .profilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
+
+/*/---STYLE INDEX EDIT PROFIL---/*/
+    .blockEditProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+
+    .editProfilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .editProfilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
 }
 
 @media screen and (min-width: 1441px) {
@@ -805,5 +911,39 @@ a.article {
         margin: 5% 5% 5% 5%;
         font-size: 1.6rem;
     }
+/*/---STYLE INDEX PROFIL---/*/
+    .blockProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
 
+    .profilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
+
+/*/---STYLE INDEX EDIT PROFIL---/*/
+    .blockEditProfil {
+        border-bottom: 6px solid #ff0000;
+        box-shadow: 0 0 30px rgb(100, 100, 100);
+        width: 80%;
+        margin: 10% 10% 10% 10%;
+    }
+
+    .editProfilForm {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .editProfilField {
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
 }
