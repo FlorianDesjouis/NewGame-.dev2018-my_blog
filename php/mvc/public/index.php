@@ -1,5 +1,5 @@
 <?php
-
+header('Location: ../view/index_home.php');
 require_once "../controller/Articles/ControllerArticles.php";
 if (isset($_GET['action'])) {
 
