@@ -1,3 +1,8 @@
-model/config/config.php
-.././.idea
-model/Articles/configdb.php
+*.idea
+*.log
+Thumbs.db
+.DS_Store
+*.sublime-*
+.*.swp
+.swp
+config/*
