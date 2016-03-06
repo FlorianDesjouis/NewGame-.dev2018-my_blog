@@ -9,8 +9,8 @@
     <link href="../public/css/style.css" rel="stylesheet">
     <script src="../public/js/jquery-2.2.0.min.js"></script>
     <script src="../public/js/script.js"></script>
-    <script src="../../public/js/optional_plugin_slide.js"></script>
-    <script src="../../public/js/checkPosition.js"></script>
+    <script src="../public/js/optional_plugin_slide.js"></script>
+    <script src="../public/js/checkPosition.js"></script>
     <title>New game+ - inscription</title>
     <script>
         $(function(){
@@ -65,6 +65,6 @@
         2016 © New game+ - Tous droits reservés
     </footer>
 </div>
-<a href="#header"><img src="../../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
+<a href="#header"><img src="../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </body>
 </html>
