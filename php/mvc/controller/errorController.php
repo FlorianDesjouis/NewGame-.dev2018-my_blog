@@ -1,6 +1,6 @@
 <?php
- class errorController{
-    public function errorAction(){
-     return "BOUH ERREUR TROUVER";
+class ErrorController extends AbstractController{
+    public function e404(){
+        return "BOUH RIEN TROUVÉ !";
     }
- };
+}
