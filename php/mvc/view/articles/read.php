@@ -19,16 +19,16 @@
         <div class="blockLogo"><img src="../../public/asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon" id="headerIcon"></a>
         <nav class="menu">
-            <a href="#">Acceuil</a>
-            <a href="#">Article</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Vidéos</a>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
         </nav>
         <div class="desktopMenu">
-            <a href="#">Accueil</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Profil</a>
-            <a href="#">Connexion</a>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
         </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
@@ -62,7 +62,7 @@
                 Mauris sit amet quam commodo, efficitur sem vel, molestie lorem. Morbi tellus nisl, auctor a nisl eu,
                 eleifend malesuada sem. Vivamus justo dolor, finibus efficitur est et, tincidunt sollicitudin tellus.
             </p>
-            <div class="blockPick"><img src="../../public/asset/img/pic1.png"></div>
+            <div class="blockPick"><img alt="imgArticle" src="../../public/asset/img/pic1.png"></div>
             <p class="blockText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur scelerisque
                 egestas. Aliquam
                 elit sapien, mollis in mattis sit amet, pharetra at lorem. Sed placerat ac magna eget vulputate. Sed
@@ -107,7 +107,7 @@
                 Mauris sit amet quam commodo, efficitur sem vel, molestie lorem. Morbi tellus nisl, auctor a nisl eu,
                 eleifend malesuada sem. Vivamus justo dolor, finibus efficitur est et, tincidunt sollicitudin tellus.
             </p>
-            <div class="blockPick"><img src="../../public/asset/img/pic2.png"></div>
+            <div class="blockPick"><img alt="imgArticle" src="../../public/asset/img/pic2.png"></div>
             <p class="blockText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur scelerisque
                 egestas. Aliquam
                 elit sapien, mollis in mattis sit amet, pharetra at lorem. Sed placerat ac magna eget vulputate. Sed

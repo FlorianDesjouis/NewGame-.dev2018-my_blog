@@ -29,16 +29,17 @@
             <hr id="croix2">
         </a>
         <nav class="menu">
-            <a href="#">Accueil</a>
-            <a href="#">Article</a>
+            <a href="index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Connexion</a>
+            <a href="index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
         </nav>
         <div class="desktopMenu">
-            <a href="#">Accueil</a>
+            <a href="index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Profil</a>
-            <a href="#">Connexion</a></div>
+            <a href="index_login.php">Profil</a>
+            <a href="index_registration.php">Connexion</a>
+        </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
             Password : <input type="password" name="userPassword" id="userPassword"><label
@@ -49,9 +50,9 @@
     <div class="blockLogin">
         <form class="loginForm">
             Merci de vous connecter :<br><br>
-            E-mail : <input type="email" name="userEmail" id="userEmail" class="fieldLogin"><label for="userEmail"></label><br>
-            Password : <input type="password" name="userPassword" id="userPassword" class="fieldLogin"><label
-                for="userPassword"></label><br>
+            E-mail : <input type="email" name="userEmail" id="userEmail2" class="fieldLogin"><label for="userEmail2"></label><br>
+            Password : <input type="password" name="userPassword" id="userPassword2" class="fieldLogin"><label
+                for="userPassword2"></label><br>
             <input type="submit" value="Login" class="fieldLogin">
         </form>
     </div>

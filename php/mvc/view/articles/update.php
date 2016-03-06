@@ -20,16 +20,17 @@
             <hr id="croix2">
         </a>
         <nav class="menu">
-            <a href="#">Accueil</a>
-            <a href="#">Article</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Connexion</a>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
         </nav>
         <div class="desktopMenu">
-            <a href="#">Accueil</a>
+            <a href="../index_home.php">Accueil</a>
             <a href="#">Image</a>
-            <a href="#">Profil</a>
-            <a href="#">Connexion</a></div>
+            <a href="../index_login.php">Profil</a>
+            <a href="../index_registration.php">Connexion</a>
+        </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
             Password : <input type="password" name="userPassword" id="userPassword"><label
@@ -39,8 +40,8 @@
     </header>
     <form method="post" action="/articles/update" class="form">
         <div class="titleSize">Formulaire de modification d'article</div>
-        <input type="text" name="title" placeholder="<?= "Afficher titre article" ?>" class="titleSize marginForm"><br><br>
-        <textarea name="content" class="textArea marginForm" id="content"><?= "Afficher contenu article" ?></textarea><label for="content"></label> <br>
+        <input type="text" name="title" placeholder="<?='Afficher titre article'?>" class="titleSize marginForm"><br><br>
+        <textarea name="content" class="textArea marginForm" id="content"><?='Afficher contenu article'?></textarea><label for="content"></label> <br>
         <input type="button" value="Choisissez un fichier" class="marginForm">
         <div class="dateSize marginForm"> Date du jour : <?= date("d.m.y") ?></div><br><br>
         <input type="button" value="Envoyer" class="Send">
