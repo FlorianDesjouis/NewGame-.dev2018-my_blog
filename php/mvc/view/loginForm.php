@@ -8,10 +8,17 @@
     <script src="../public/js/jquery-2.2.0.min.js"></script>
     <script src="../public/js/jquery-ui.min.js"></script>
     <script src="../public/js/script.js"></script>
+    <script src="../public/js/optional_plugin_slide.js"></script>
+    <script src="../public/js/checkPosition.js"></script>
     <title>New game+</title>
+    <script>
+        $(function(){
+            $('header').myPlugin({time:1000});
+        });
+    </script>
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="blockLogo"><img src="../public/asset/img/logo_blog.png" alt="logo_blog"></div>
     <a href="#" class="headerIcon" id="headerIcon"></a>
     <nav class="menu">
@@ -32,4 +39,5 @@
     </form>
 </header>
 </body>
+<a href="#header"><img src="../public/asset/img/logo_blog.png" id="toTheTop" alt="toTheTop button"></a>
 </html>
