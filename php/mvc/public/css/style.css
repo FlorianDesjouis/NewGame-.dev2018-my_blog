@@ -9,6 +9,20 @@ html {
     font-family: OpenSansRegular;
 }
 
+/* Scroll to the Top Button */
+
+#toTheTop{
+    position: fixed;
+    left: 20px;
+    top: 30px;
+    height: 70px;
+    width: 20%;
+    display: none;
+    background: transparent;
+    opacity: 0.7;
+    z-index: 999;
+}
+
 /* Ajout effet animation d'une page a l'autre */
 
 @keyframes Show {
