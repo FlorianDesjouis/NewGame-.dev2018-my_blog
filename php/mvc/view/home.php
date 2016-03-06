@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../public/css/style.css">
     <script src="../../mvc/public/js/jquery-2.2.0.min.js"></script>
     <script src="../../mvc/public/js/script.js"></script>
-    <script src="../public/js/optional_plugin_slide.js"></script>
-    <script src="../public/js/checkPosition.js"></script>
+    <script src="../../mvc/public/js/optional_plugin_slide.js"></script>
+    <script src="../../mvc/public/js/checkPosition.js"></script>
     <title>New game+</title>
     <script>
         $(function(){
