@@ -6,12 +6,12 @@ $(function () {
         $('.errorBlock').html("");
         $.ajax({
             method: "POST",
-            url: '../controller/Users/loginController.php',
+            url: '/login/connexion',
             data: $(this).serialize(),
             dataType: "json",
             success: function () {
                 $('.successBlock').html("Vous étes connecté");
-                window.location.replace('../../view/index_home.php');
+                window.location.replace('view/index_home.php');
             },
             error: function () {
 

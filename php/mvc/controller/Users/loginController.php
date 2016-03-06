@@ -1,37 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Wrex
- * Date: 05/03/2016
- * Time: 22:08
- */
-session_start();
-if(isset($_POST['logout'])){
-    unset($_SESSION['users']);
-}
-if(isset($_SESSION['users'])){
-    header("Location: /");
-    exit;
-}
-$errormessage = null;
-if(isset($_POST['login'])){
-    global $pdo;
-    $stmt = $pdo->prepare("SELECT * FROM users
-                          WHERE login = :login"
-    );
-    $stmt->bindParam("login",$_POST['login']);
-    $stmt->execute();
-    $result = $stmt->fetch();
-    if($result === false){
-        $errormessage = "Wrong login";
-    }elseif (empty($_POST["password"])) {
-        $errormessage = "No password";
-    }elseif (sha1($_POST["password"]) != $result["password"]) {
-        $errormessage = "Wrong password";
-    }else{
-        $_SESSION['users'] = $result["login"];
-        header("Location: /");
-        exit;
+
+class UserController extends AbstractController
+{
+    public function connexionAction()
+    {
+        if (!isset($_POST['userMail']) && !isset($_POST['userPassword']))
+            return json_encode(["error" => "userEmail or userPassword missing"]);
+        $userPassword = strip_tags($_POST['userPassword']);
+        $userPassword = htmlentities($userPassword);
+        $userPassword = trim($userPassword);
+        sha1($userPassword);
+        $userEmail = strip_tags($_POST['userEmail']);
+        $userEmail = htmlentities($userEmail);
+        $userEmail = trim($userEmail);
+        $user = UserModel::loginUser($this->pdo, $userEmail, $userPassword);
+        return json_encode(["message" => "Connecté !",
+            "userEmail" => $userEmail,
+            "userPassword" => $userPassword
+        ]);
     }
-    include '../index_login.php';
 }

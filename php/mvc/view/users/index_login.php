@@ -12,18 +12,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale= 0.20">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="Users/loginScript.js"></script>
-    <script src="js/script.js"></script>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/jquery-2.2.0.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../controller/Users/loginScript.js"></script>
+    <script src="../js/script.js"></script>
     <title>New game+</title>
 </head>
 <body>
 <div class="mainConteiner">
     <header class="header">
-        <div class="blockLogo"><img src="asset/img/logo_blog.png" alt="logo_blog"></div>
+        <div class="blockLogo"><img src="../asset/img/logo_blog.png" alt="logo_blog"></div>
         <a href="#" class="headerIcon"></a>
         <a href="#" class="hideIcon">
             <hr id="croix1">

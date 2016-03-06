@@ -24,8 +24,8 @@
         <div class="desktopMenu">
             <a href="#">Accueil</a>
             <a href="#">Image</a>
-            <a href="index_login.php">Profil</a>
-            <a href="index_registration.php">Connexion</a>
+            <a href="users/index_login.php">Profil</a>
+            <a href="users/index_registration.php">Connexion</a>
         </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>

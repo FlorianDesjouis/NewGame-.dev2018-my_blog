@@ -1,25 +1,37 @@
 <?php
-header('Location: ../view/index_home.php');
-require_once "../controller/Articles/ControllerArticles.php";
-if (isset($_GET['action'])) {
-
-    if ($_GET['action'] == 'article') {
-        if (isset($_GET['id'])) {
-            $id = intval($_GET['id']);
-            if ($id != 0) {
-                $database = new controllerArticle();
-                $database->getAllArticle();
-            }
-            else
-                throw new Exception("Identifiant de billet non valide");
-        }
-        else
-            throw new Exception("Identifiant de billet non défini");
+require_once("../utils/init.php");
+$called_url = $_SERVER['REQUEST_URI'];
+$url_composants = explode("/",$called_url,4);
+if(isset($url_composants[1])){
+    if(strlen($url_composants[1]) ==0){
+        $controller_name = "index";
+    }else{
+        $controller_name = $url_composants[1];
     }
-    else
-        throw new Exception("Action non valide");
+
+}else{
+    $controller_name = "index";
 }
-else {
-    $database = new controllerArticle();
-    $database->getAllArticle();
+if(isset($url_composants[2])){
+    $action_name = $url_composants[2];
+}else{
+    $action_name = "index";
 }
+$class_name = ucfirst($controller_name)
+    ."Controller";
+global $pdo;
+try{
+    $controller = new $class_name($pdo);
+}catch(Exception $e){
+    $controller = new ErrorController($pdo);
+}
+$action = strtolower($action_name)."Action";
+if(!method_exists($controller,$action)){
+    $controller = new ErrorController($pdo);
+    $action = "e404";
+}
+$result = $controller->$action();
+if(is_string($result)){
+    echo $result;
+}
+
