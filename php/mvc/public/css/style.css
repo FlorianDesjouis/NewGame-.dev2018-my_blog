@@ -126,7 +126,19 @@ body {
     display: inline-block;
     width: 90%;
     margin: 5% 5% 5% 5%;
-    font-size: 1rem;
+    font-size: 0.5rem;
+    line-height: 1.2rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgb(100, 100, 100);
+    color: #000000;
+}
+.articlePage {
+    display: inline-block;
+    width: 90%;
+    margin: 5% 5% 5% 5%;
+    font-size: 0.5rem;
     line-height: 1.2rem;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -140,6 +152,9 @@ body {
 }
 
 a.article {
+    text-decoration: none;
+}
+a.articlePage {
     text-decoration: none;
 }
 
@@ -379,9 +394,36 @@ a.article {
         display: inline-block;
         width: 90%;
         margin: 5% 5% 5% 5%;
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        text-align: justify;
+        font-size: 1rem;
+        line-height: 2rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+    .articlePage {
+        display: inline-block;
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+        font-size: 1rem;
+        line-height: 2rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+
+    .article:hover {
+        background-color: #EFEFEF;
+    }
+
+    a.article {
+        text-decoration: none;
+    }
+    a.articlePage {
+        text-decoration: none;
     }
 
     .blockText {
@@ -585,11 +627,38 @@ a.article {
 
     .article {
         display: inline-block;
-        text-align: justify;
-        font-size: 1.6rem;
-        line-height: 2.0rem;
         width: 90%;
-        margin: 2% 3% 2% 5%;
+        margin: 5% 5% 5% 5%;
+        font-size: 1.3rem;
+        line-height: 3rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+    .articlePage {
+        display: inline-block;
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+        font-size: 1.3rem;
+        line-height: 3rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+
+    .article:hover {
+        background-color: #EFEFEF;
+    }
+
+    a.article {
+        text-decoration: none;
+    }
+    a.articlePage {
+        text-decoration: none;
     }
 
     .blockText {
@@ -804,10 +873,37 @@ a.article {
     .article {
         display: inline-block;
         width: 90%;
-        margin: 2% 3% 2% 3%;
-        font-size: 2.0rem;
-        line-height: 2.0rem;
-        text-align: justify;
+        margin: 5% 5% 5% 5%;
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+    .articlePage {
+        display: inline-block;
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 15px rgb(100, 100, 100);
+        color: #000000;
+    }
+
+    .article:hover {
+        background-color: #EFEFEF;
+    }
+
+    a.article {
+        text-decoration: none;
+    }
+    a.articlePage {
+        text-decoration: none;
     }
 
     .blockText {

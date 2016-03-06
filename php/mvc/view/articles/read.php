@@ -22,6 +22,12 @@
             <a href="#">Image</a>
             <a href="#">Vidéos</a>
         </nav>
+        <div class="desktopMenu">
+            <a href="#">Accueil</a>
+            <a href="#">Image</a>
+            <a href="#">Profil</a>
+            <a href="#">Connexion</a>
+        </div>
         <form class="login">
             E-mail : <input type="email" name="userEmail" id="userEmail"><label for="userEmail"></label><br>
             Password : <input type="password" name="userPassword" id="userPassword"><label
@@ -30,7 +36,7 @@
         </form>
     </header>
     <section class="section">
-        <article class="article">
+        <article class="articlePage">
             <h2 class="title">Salut</h2>
             <p class="blockText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur scelerisque
                 egestas. Aliquam
